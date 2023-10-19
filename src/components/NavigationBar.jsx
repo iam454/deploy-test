@@ -43,7 +43,7 @@ const Text = styled.span`
 `;
 
 const NavigationBar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // 아마 로그인 상태는 로컬스토리지로 관리할 듯?
+  const [isLoggedIn, setIsLoggedIn] = useState(true); // 아마 로그인 상태는 로컬스토리지로 관리할 듯?
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [uploadFile, setUploadFile] = useRecoilState(uploadFileState);
   const navigate = useNavigate();
